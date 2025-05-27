@@ -1,0 +1,173 @@
+/*2. CSS Syntax and Comments*/
+.cta-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+/*3. Selectors Playground*/
+* {
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-size: 24px;
+  color: #333;
+}
+#mainHeader {
+  background-color: #222;
+  color: #fff;
+}
+.eventCard {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px 0;
+}
+h3, p {
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 10px;
+}
+
+/*4. Color & Background Styling*/
+body {
+  background: url('bg.jpg') no-repeat center center;
+  background-color: #e0e0e0;
+}
+h2 {
+  color: #0044cc;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+section header {
+  background: linear-gradient(to right, #0066ff, #66ccff);
+  color: white;
+  padding: 10px;
+}
+
+/*5. Typography: Fonts and Text*/
+
+/*<!-- In HTML -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.description {
+  text-align: justify;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+/*6. Link and List Styling*/
+
+/* Links */
+a:link { color: blue; }
+a:visited { color: purple; }
+a:hover { color: orange; }
+a:active { color: red; }
+
+/* Lists */
+nav ul {
+  list-style-type: none;
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  padding: 8px;
+  margin: 4px 0;
+}
+
+
+/*7. Table Styling*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+/* Zebra striping */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+
+/*8. Box Model & Layout Control*/
+
+.eventCard {
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin: 15px;
+}
+
+input:focus {
+  outline: 2px solid #007BFF;
+}
+
+/* Visibility comparison */
+.hidden-element {
+  visibility: hidden; /* Takes up space */
+}
+
+.none-element {
+  display: none; /* Does not take up space */
+}
+
+
+/*9. Multiple Columns in Text*/
+.news-article {
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: 1px solid gray;
+}
+
+
+/*10. Responsive Design with Media Queries*/
+/* Default horizontal nav */
+nav a {
+  display: inline-block;
+  padding: 10px;
+}
+
+/* Responsive stack for mobile */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Optional: Flexbox layout */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/*11. Debug and Test
+Open Chrome DevTools → Toggle device toolbar (Ctrl+Shift+M)
+
+Inspect and edit elements in real-time
+
+Use Network tab to check if styles.css loaded*/
